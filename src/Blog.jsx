@@ -13,10 +13,15 @@ class Blog extends React.Component {
     super(props);/**おまじないだと思え*/
   }
   render() {
+    const authorName = "Torahack"
     return (
       <>
-        <Article />
-        <Article />
+        <Article
+          title={"Reactの使い方"}
+          order={3}
+          isPublished={true}
+          authorName={authorName}
+        />
       </>
     )
   }

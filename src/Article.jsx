@@ -8,9 +8,13 @@ import React from 'react';
  *  - JSXをreturnする
  */
 const Article = (props) => {
+  const publishState = props.isPublished ? "公開" : "非公開"
   return (
     <div>
-      <h2>Reactコンポーネントの使い方</h2>
+      <p>{ publishState}</p>
+      <h2>{props.title}</h2>
+      <p>順番は{props.order}です。</p>
+      <p>著者:{ props.authorName }</p>
     </div>
   )
 }
