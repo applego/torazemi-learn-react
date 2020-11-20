@@ -16,12 +16,9 @@ class Blog extends React.Component {
     const authorName = "Torahack"
     return (
       <>
-        <Article
-          title={"Reactの使い方"}
-          order={3}
-          isPublished={true}
-          authorName={authorName}
-        />
+        <Article title={"Reactの使い方"} order={1} />
+        <Article title={"JSXの使い方"} order={2} />
+        <Article title={"環境構築してみよう"} order={3} />
       </>
     )
   }
