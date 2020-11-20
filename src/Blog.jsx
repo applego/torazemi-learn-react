@@ -14,10 +14,10 @@ class Blog extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <>
         <Article />
         <Article />
-      </React.Fragment>
+      </>
     )
   }
 }
