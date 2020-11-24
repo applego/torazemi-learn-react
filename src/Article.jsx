@@ -8,11 +8,11 @@ import React from 'react';
  *  - JSXをreturnする
  */
 const Article = (props) => {
-  const publishState = props.isPublished ? "公開" : "非公開"
   return (
     <div>
       <h2>{props.title}</h2>
-      <p>順番は{ props.order }です。</p>
+      <label for="check">公開状態:</label>
+      <input type="checkbox" checked={props.isPublished} id="check" onClick={ () => props.toggle() }></input>
     </div>
   )
 }
