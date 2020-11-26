@@ -1,6 +1,7 @@
 import React from 'react';
 import Article from './Article';
-import { Foo, Bar } from './components/FooBar'; // 名前付きモジュールのインポート
+// import { Foo, Bar } from './components/FooBar'; // 名前付きモジュールのインポート
+import * as FooBar from './components/FooBar'; // 別名インポート
 import Hoge from './components/Hoge'; // 名前なしモジュールのインポート
 
 
@@ -58,8 +59,8 @@ class Blog extends React.Component {
           toggle={() => this.togglePublished()}
           count={this.state.count}
         />
-        <Foo />
-        <Bar />
+        <FooBar.Foo />
+        <FooBar.Bar />
         <Hoge />
       </>
     )
